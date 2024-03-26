@@ -1,0 +1,17 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "proyecto final",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "electron": "^28.2.3",
+    "mysql2": "^3.9.2"
+  }
+}

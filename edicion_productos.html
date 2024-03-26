@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición de Producto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="div-edicion-producto">
+        <h2 class="text-center">Editar Producto</h2>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <label for="id-producto">Código:</label>
+            <input type="text" id="id-producto" name="id-producto" class="form-control" disabled>
+        </div>
+
+        <form id="formulario">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <label for="nombre-producto">Nombre:</label>
+                <input type="text" id="nombre-producto" name="nombre-producto" class="form-control" required>
+
+                <label for="descripcion-producto">Descripción:</label>
+                <input type="text" id="descripcion-producto" name="descripcion-producto" class="form-control" required>
+
+                <label for="categoria-producto">Categoría:</label>
+                <input type="text" id="categoria-producto" name="categoria-producto" class="form-control" required>
+
+                <label for="existencia-producto">Existencia:</label>
+                <input type="number" id="existencia-producto" name="existencia-producto" class="form-control" required>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <br>
+                    <button type="reset" class="btn btn-outline-success">Restablecer</button>
+                    <button type="submit" class="btn btn-outline-success" id="botonGuardarCambios">Guardar Cambios</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="rendererEdicionProductos.js"></script>
+</body>
+</html>
